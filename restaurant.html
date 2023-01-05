@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> old school cafe</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header::before {
+        background: url('https://images.unsplash.com/photo-1610898763980-367f03bd7edc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80')no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        height: 60%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.6;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar {
+        margin: 45px;
+        padding: 46px;
+    }
+
+    .navbar li {
+        list-style: none;
+        display: inline;
+
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: black;
+        padding: 54px;
+        font-weight: bold;
+        font-size: 32px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    li a:hover {
+        color: blue;
+    }
+
+    .logo img {
+
+        height: 200px;
+        width: 300px;
+
+    }
+
+    h1 {
+        text-align: center;
+        margin: 200px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: blueviolet;
+        font-size: 50px;
+    }
+
+    h2 {
+        color: rgb(90, 18, 158);
+        font-size: 42px;
+    }
+
+
+    .box {
+        margin: auto;
+        border: 2px solid black;
+        background-color: peachpuff;
+        display: flexbox;
+        height: 200px;
+        width: 1200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 40px;
+        padding: 40px;
+        font-size: 20px;
+        transition-property: background-color;
+        transition-duration: 2s;
+        transition-timing-function: ease-out;
+        transition-delay: 2s;
+        transition: all 1s ease-out;
+    }
+
+    .box:hover {
+        background-color: skyblue;
+        height: 200px;
+        width: 1200px;
+
+    }
+
+    #home p {
+        margin: 30px;
+        font-size: 53px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+    }
+
+    .box p {
+        font-size: 25px;
+    }
+
+    #menu h2 {
+        color: brown;
+        text-align: center;
+        margin: 100px;
+        font-size: 60px;
+    }
+
+    .box2 {
+        border: 2px solid black;
+        background-color: wheat;
+        height: 300px;
+        width: 400px;
+        display: inline-block;
+        margin: 10px;
+        border-radius: 30px;
+    }
+
+    .box2 img {
+        height: 80px;
+        margin: 10px;
+    }
+h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+
+    #b1 li,
+    #b2 li,
+    #b3 li,
+    #b4 li,
+    #b5 li,
+    #b6 li {
+        list-style: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 19px;
+
+    }
+    #contact h1{
+        color: black;
+        font-size: 64px;
+    }
+    .contactbox{
+        align-items: center;
+        text-align: center;
+        font-size: 34px;
+        padding: auto;
+        background-color: black;
+        color: white;
+    }
+    #contact{
+       
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://t4.ftcdn.net/jpg/02/75/70/03/360_F_275700347_09reCCwb7JBxTKiYQXsyri4riMKaHbj8.jpg" alt="">
+
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#home"> HOME</a></li>
+                <li> <a href="#services"> SERVICES</a></li>
+                <li> <a href="#menu"> MENU</a></li>
+                <li> <a href="#contact"> CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <p> Welcome to our website.<br>
+            Our cafe old school offers best cuisine and services
+        </p>
+    </section>
+    <section id="services">
+        <h1> OUR SERVICES </h1>
+        <div class="box" id="box1">
+            <h2> Quick Service</h2>
+            <p>A quick service establishment offers the fastest service along with the least expensive ticket items.
+                Fast food restaurants like McDonald's and Wendy's are great examples of quick-service restaurants.
+                Since COVID-19, this type of establishment has grown in popularity. Patrons enjoy contactless
+                service, 24/7 access, and delicious (yet sometimes unhealthy) food items</p>
+        </div><br>
+        <div class="box" id="box2">
+            <h2> Fine Dining</h2>
+            <p> Fine dining restaurants offer more elaborate and expensive menu items. The most critical part of a
+                fine dining establishment is the atmosphere. Customers don't just go for the good food; they go for
+                the experience.
+            </p>
+        </div><br>
+        <div class="box" id="box3">
+            <h2> Fast Casual</h2>
+            <p>Fast-casual is a relatively new term that refers to food service outlets such as restaurants, cafes,
+                and food kiosks that offer moderately priced meals in a quick-service, casual environment. It's a
+                term that is used more often for restaurants, as opposed to more formal restaurants, and it is often
+                more like a diner or cafe that provides more than just sandwiches and hot dogs.</p>
+        </div><br>
+        <div class="box" id="box4">
+            <h2>Casual Dining</h2>
+            <p>Casual dining restaurants are similar to fast-casual establishments. The difference is that this
+                table service is more family-friendly and the menu options are more extensive. Patrons feel
+                comfortable dining in and ordering food from a server. Waitstaff handles everything as they would in
+                a fine dining restaurant, but the ambiance is less luxurious.
+            </p>
+        </div>
+        </div>
+    </section>
+    <section id="menu">
+        <h2> Menu</h2>
+        <div class="box2" id="b1"><img
+                src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-sliced-into-six-slices_141793-2157.jpg?w=2000"
+                alt="">
+            <h3> PIZZA<h3>
+                    <ul>
+                        <li> veg cheese pizza </li>
+                        <li> Margherita pizza </li>
+                        <li> Veg Supreme pizza </li>
+                        <li> Onion pizza </li>
+                        <li> Tomato pizza </li>
+                        <li> farmhouse pizza </li>
+                    </ul>
+        </div>
+        <div class="box2" id="b2"><img
+                src="https://thumbs.dreamstime.com/b/assorted-chinese-food-set-noodles-fried-rice-dumplings-peking-duck-dim-sum-spring-rolls-famous-cuisine-dishes-74023556.jpg"
+                alt="">
+                <h3> CHINESE<h3>
+                    <ul>
+                        <li> Noodles </li>
+                        <li> Manchurian </li>
+                        <li> Veg roll </li>
+                        <li> Cheese roll </li>
+                        <li> honey chili potato </li>
+                        <li> paneer chili </li>
+                    </ul>
+        </div>
+        </div>
+        <div class="box2" id="b3"><img src="https://thumbs.dreamstime.com/b/penne-pasta-plate-tomato-sauce-30685904.jpg"
+                alt="">
+            <h3> PASTA<h3>
+            <ul>
+                <li>penne pasta</li>
+                <li> veg cheese pasta</li>
+                <li> Ravioli pasta</li>
+                <li> green sauce pasta</li>
+                <li> white sauce pasta</li>
+                <li>red sauce pasta</li>
+            </ul>
+        </div>
+        <div class="box2" id="b4"><img
+                src="https://www.indiafoodnetwork.in/h-upload/2021/11/02/588170-whatsapp-image-2021-11-02-at-53408-pm.webp"
+                alt="">
+            <h3> MAIN COURSE<h3>
+            <ul>
+                <li>kadhai paneer </li>
+                <li>shahi paneer</li>
+                <li> kaju curry</li>
+                <li> paneer pasanda</li>
+                <li> mix veg</li>
+                <li>dal fry</li>
+            </ul>
+        </div>
+        <div class="box2" id="b5"><img
+                src="https://www.tutorialspoint.com/food_and_beverage_services/images/non_alcoholic_beverages.jpg"
+                alt="">
+            <h3>MOCKTAILS<h3>
+            <ul>
+                <li> Blue ocean</li>
+                <li>Green ocean</li>
+                <li>Mojito</li>
+                <li>Blue lagoon</li>
+                <li>Virgin mary</li>
+                <li>citrus fizz</li>
+            </ul>
+        </div>
+        <div class="box2" id="b6"><img
+                src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1556744250%2Fthe-ultimate-veggie-sandwich-1905.jpg%3Fitok%3DrAOvFAhQ"
+                alt="">
+            <h3> SANDWICHES<h3>
+            <ul>
+                <li>Basic Vegetable Sandwich </li>
+                <li> Falafel Sandwich </li>
+                <li> Chutney sandwich </li>
+                <li> Mint sandwich </li>
+                <li>Bombay sandwich </li>
+                <li> Cucumber Sandwich</li>
+            </ul>
+        </div>
+
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <div class="contactbox">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.oldschool.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
